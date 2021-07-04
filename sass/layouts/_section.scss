@@ -3,6 +3,8 @@ section {
 	height: 100%;
 	position: absolute;
 	left: 0;
+	overflow: hidden;
+	transition: left 0.2s;
 
 	&-wrapper {
 		width: inherit;
