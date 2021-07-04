@@ -24,6 +24,11 @@
 			border: 0.1rem solid var(--color-white);
 			border-radius: 50%;
 			margin: 0 0.3rem;
+			transition: background-color 0.2s;
+
+			&-1 {
+				background-color: #ddd;
+			}
 		}
 	}
 }

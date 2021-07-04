@@ -1,5 +1,6 @@
 .section-3 {
 	z-index: 30;
+	background-color: #000;
 
 	&-wrapper {
 		width: 100%;
@@ -10,6 +11,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transition: opacity 1.5s;
 	}
 
 	&-heading {
@@ -33,4 +35,10 @@
 	width: 40rem;
 	position: absolute;
 	opacity: 0.7;
+	transition: all 1.5s;
+
+	&:hover {
+		opacity: 1;
+		transform: scale(2);
+	}
 }
