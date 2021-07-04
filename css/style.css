@@ -185,3 +185,42 @@ section {
   color: #eee;
   text-align: center;
   letter-spacing: 0.2rem; }
+
+.navbar {
+  position: fixed;
+  z-index: 60;
+  width: 100%;
+  top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .navbar__logo {
+    width: 6rem; }
+  .navbar__list {
+    display: flex;
+    justify-content: center; }
+  .navbar__link {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    width: 15rem;
+    margin: 0 3rem;
+    text-transform: uppercase;
+    border: 0.1rem solid #fff;
+    text-align: center;
+    padding: 0.2rem 0;
+    letter-spacing: 0.1rem;
+    position: relative;
+    overflow: hidden; }
+    .navbar__link::before {
+      content: '';
+      position: absolute;
+      width: 150%;
+      height: 5rem;
+      background-color: #d50000;
+      left: -20%;
+      transform: rotate(-40deg) translateX(-4rem);
+      transform-origin: left bottom;
+      opacity: 0.8;
+      transition: left 0.3s; }
+    .navbar__link:hover::before {
+      left: 110%; }
