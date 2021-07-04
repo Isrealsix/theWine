@@ -186,6 +186,27 @@ section {
   text-align: center;
   letter-spacing: 0.2rem; }
 
+.progress {
+  position: fixed;
+  z-index: 100;
+  bottom: 2rem;
+  left: 3rem; }
+  .progress-box {
+    margin: 1rem 0;
+    text-align: center; }
+    .progress-box h2 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: var(--color-white); }
+  .progress__circle {
+    display: flex; }
+    .progress__circle .circle {
+      width: 1rem;
+      height: 1rem;
+      border: 0.1rem solid var(--color-white);
+      border-radius: 50%;
+      margin: 0 0.3rem; }
+
 .navbar {
   position: fixed;
   z-index: 60;
@@ -224,3 +245,26 @@ section {
       transition: left 0.3s; }
     .navbar__link:hover::before {
       left: 110%; }
+
+.page-btn {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none; }
+  .page-btn--left {
+    left: 4rem; }
+    .page-btn--left img {
+      transform: rotate(-90deg); }
+  .page-btn--right {
+    right: 4rem; }
+    .page-btn--right img {
+      transform: rotate(90deg); }
+  .page-btn img {
+    width: 4rem;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity 0.2s; }
+    .page-btn img:hover {
+      opacity: 1; }

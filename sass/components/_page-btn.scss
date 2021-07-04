@@ -1,0 +1,35 @@
+.page-btn {
+	position: fixed;
+	z-index: 100;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: none;
+
+	&--left {
+		left: 4rem;
+
+		img {
+			transform: rotate(-90deg);
+		}
+	}
+
+	&--right {
+		right: 4rem;
+
+		img {
+			transform: rotate(90deg);
+		}
+	}
+
+	img {
+		width: 4rem;
+		opacity: 0.4;
+		cursor: pointer;
+		transition: opacity 0.2s;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

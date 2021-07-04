@@ -1,0 +1,29 @@
+.progress {
+	position: fixed;
+	z-index: 100;
+	bottom: 2rem;
+	left: 3rem;
+
+	&-box {
+		margin: 1rem 0;
+		text-align: center;
+
+		h2 {
+			font-size: 2.5rem;
+			font-weight: 300;
+			color: var(--color-white);
+		}
+	}
+
+	&__circle {
+		display: flex;
+
+		.circle {
+			width: 1rem;
+			height: 1rem;
+			border: 0.1rem solid var(--color-white);
+			border-radius: 50%;
+			margin: 0 0.3rem;
+		}
+	}
+}
