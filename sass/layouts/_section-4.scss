@@ -29,6 +29,10 @@
 		color: #d50000;
 		user-select: none;
 		opacity: 0.8;
+
+		@include respond(tablet) {
+			font-size: 8rem;
+		}
 	}
 }
 
@@ -37,4 +41,8 @@
 	border: 0.1rem solid var(--color-white);
 	padding: 1rem;
 	opacity: 0.7;
+
+	@include respond(tablet) {
+		width: 60rem;
+	}
 }

@@ -10,10 +10,19 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		@include respond(tablet) {
+			flex-direction: column;
+		}
 	}
 }
 
 .footer-list {
+	@include respond(tablet) {
+		width: 20rem;
+		margin: 2rem auto;
+	}
+
 	li {
 		font-size: 2rem;
 		font-weight: 700;
@@ -32,6 +41,26 @@
 	width: 60rem;
 	margin: 0 20rem;
 	opacity: 0.9;
+
+	@include respond(x-large) {
+		width: 45rem;
+		margin: 0 12rem;
+	}
+
+	@include respond(large) {
+		width: 35rem;
+		margin: 0 10rem;
+	}
+
+	@include respond(laptop) {
+		width: 25rem;
+		margin: 0 7rem;
+	}
+
+	@include respond(tablet) {
+		width: 20rem;
+		order: 1;
+	}
 }
 
 .copyright {

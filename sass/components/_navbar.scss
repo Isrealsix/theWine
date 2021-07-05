@@ -7,6 +7,11 @@
 	justify-content: space-evenly;
 	align-items: center;
 
+	@include respond(tablet) {
+		justify-content: start;
+		padding-left: 2rem;
+	}
+
 	&__logo {
 		width: 6rem;
 	}
@@ -14,6 +19,19 @@
 	&__list {
 		display: flex;
 		justify-content: center;
+		transition: right 0.5s;
+
+		@include respond(tablet) {
+			flex-direction: column;
+			position: absolute;
+			top: 5rem;
+			right: -21rem;
+			height: calc(100vh - 5rem);
+			background-color: #333;
+			justify-content: start;
+			padding: 2rem;
+			border-radius: 0.5rem 0 0 0;
+		}
 	}
 
 	&__link {
@@ -29,6 +47,13 @@
 		position: relative;
 		overflow: hidden;
 
+		@include respond(laptop) {
+			margin: 0 1.5rem;
+		}
+
+		@include respond(tablet) {
+			margin: 1rem;
+		}
 		&::before {
 			content: '';
 			position: absolute;
@@ -46,4 +71,8 @@
 			left: 110%;
 		}
 	}
+}
+
+.change .navbar__list {
+	right: 0;
 }

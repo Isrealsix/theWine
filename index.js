@@ -8,6 +8,7 @@ const circles = document.querySelectorAll('.circle');
 const [leftBtn, rightBtn] = document.querySelectorAll(
 	'.page-btn--left, .page-btn--right'
 );
+const menu = document.querySelector('.menu');
 
 const progressCounter = () => {
 	const total = sections.length;
@@ -88,4 +89,8 @@ document.querySelector('.grapes-img').addEventListener('mouseover', () => {
 
 document.querySelector('.grapes-img').addEventListener('mouseleave', () => {
 	document.querySelector('.section-3-wrapper').style.opacity = '1';
+});
+
+menu.addEventListener('click', () => {
+	document.querySelector('.navbar').classList.toggle('change');
 });

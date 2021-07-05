@@ -39,6 +39,9 @@ section {
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("/images/section-1-bg.jpg") center no-repeat;
     background-size: cover; }
+    @media only screen and (max-width: 75em) {
+      .section-1-wrapper {
+        width: 100%; } }
   .section-1-heading {
     font-size: 10rem;
     font-weight: 300;
@@ -48,6 +51,9 @@ section {
     border-bottom: 0.2rem solid #d50000;
     text-align: right;
     user-select: none; }
+    @media only screen and (max-width: 75em) {
+      .section-1-heading {
+        font-size: 8rem; } }
     .section-1-heading-wrapper {
       position: absolute;
       top: 70%;
@@ -64,15 +70,30 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-evenly; }
+    @media only screen and (max-width: 62.5em) {
+      .section-2-wrapper {
+        flex-direction: column; } }
 
 .sale {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 62.5em) {
+    .sale {
+      order: 1; } }
   .sale__bag {
     opacity: 0.9;
     width: 45rem; }
+    @media only screen and (max-width: 100em) {
+      .sale__bag {
+        width: 35rem; } }
+    @media only screen and (max-width: 81.25em) {
+      .sale__bag {
+        width: 30rem; } }
+    @media only screen and (max-width: 75em) {
+      .sale__bag {
+        width: 25rem; } }
   .sale__button {
     width: 20rem;
     height: 5rem;
@@ -85,12 +106,26 @@ section {
     margin-top: 4rem;
     border: 0.1rem solid var(--color-white);
     transition: background-color 0.2s; }
+    @media only screen and (max-width: 75em) {
+      .sale__button {
+        width: 15rem;
+        height: 4rem;
+        font-size: 1.7rem; } }
     .sale__button:hover {
       background-color: #d50000; }
 
 .wine-bottle {
   opacity: 0.6;
   width: 80rem; }
+  @media only screen and (max-width: 100em) {
+    .wine-bottle {
+      width: 65rem; } }
+  @media only screen and (max-width: 81.25em) {
+    .wine-bottle {
+      width: 60rem; } }
+  @media only screen and (max-width: 75em) {
+    .wine-bottle {
+      width: 50rem; } }
 
 .section-3 {
   z-index: 30;
@@ -112,17 +147,26 @@ section {
     text-align: center;
     text-shadow: 0 0.5rem 1.5rem #000;
     user-select: none; }
+    @media only screen and (max-width: 62.5em) {
+      .section-3-heading {
+        font-size: 12rem; } }
 
 .frame-img {
   width: 100rem;
   position: absolute;
   opacity: 0.5; }
+  @media only screen and (max-width: 62.5em) {
+    .frame-img {
+      width: 70rem; } }
 
 .grapes-img {
   width: 40rem;
   position: absolute;
   opacity: 0.7;
   transition: all 1.5s; }
+  @media only screen and (max-width: 62.5em) {
+    .grapes-img {
+      width: 25rem; } }
   .grapes-img:hover {
     opacity: 1;
     transform: scale(2); }
@@ -152,12 +196,18 @@ section {
     color: #d50000;
     user-select: none;
     opacity: 0.8; }
+    @media only screen and (max-width: 62.5em) {
+      .section-4-heading {
+        font-size: 8rem; } }
 
 .new-wines-img {
   width: 70rem;
   border: 0.1rem solid var(--color-white);
   padding: 1rem;
   opacity: 0.7; }
+  @media only screen and (max-width: 62.5em) {
+    .new-wines-img {
+      width: 60rem; } }
 
 .section-5 {
   z-index: 10; }
@@ -169,6 +219,14 @@ section {
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 62.5em) {
+      .section-5-wrapper {
+        flex-direction: column; } }
+
+@media only screen and (max-width: 62.5em) {
+  .footer-list {
+    width: 20rem;
+    margin: 2rem auto; } }
 
 .footer-list li {
   font-size: 2rem;
@@ -184,6 +242,22 @@ section {
   width: 60rem;
   margin: 0 20rem;
   opacity: 0.9; }
+  @media only screen and (max-width: 100em) {
+    .footer-img {
+      width: 45rem;
+      margin: 0 12rem; } }
+  @media only screen and (max-width: 81.25em) {
+    .footer-img {
+      width: 35rem;
+      margin: 0 10rem; } }
+  @media only screen and (max-width: 75em) {
+    .footer-img {
+      width: 25rem;
+      margin: 0 7rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .footer-img {
+      width: 20rem;
+      order: 1; } }
 
 .copyright {
   position: absolute;
@@ -226,11 +300,27 @@ section {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
+  @media only screen and (max-width: 62.5em) {
+    .navbar {
+      justify-content: start;
+      padding-left: 2rem; } }
   .navbar__logo {
     width: 6rem; }
   .navbar__list {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    transition: right 0.5s; }
+    @media only screen and (max-width: 62.5em) {
+      .navbar__list {
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        right: -21rem;
+        height: calc(100vh - 5rem);
+        background-color: #333;
+        justify-content: start;
+        padding: 2rem;
+        border-radius: 0.5rem 0 0 0; } }
   .navbar__link {
     font-size: 1.5rem;
     color: var(--color-white);
@@ -243,6 +333,12 @@ section {
     letter-spacing: 0.1rem;
     position: relative;
     overflow: hidden; }
+    @media only screen and (max-width: 75em) {
+      .navbar__link {
+        margin: 0 1.5rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .navbar__link {
+        margin: 1rem; } }
     .navbar__link::before {
       content: '';
       position: absolute;
@@ -256,6 +352,9 @@ section {
       transition: left 0.3s; }
     .navbar__link:hover::before {
       left: 110%; }
+
+.change .navbar__list {
+  right: 0; }
 
 .page-btn {
   position: fixed;
@@ -279,3 +378,36 @@ section {
     transition: opacity 0.2s; }
     .page-btn img:hover {
       opacity: 1; }
+
+.menu {
+  display: none; }
+  @media only screen and (max-width: 62.5em) {
+    .menu {
+      display: block;
+      width: 4rem;
+      height: 2.5rem;
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; } }
+  .menu__line {
+    transition: transform 0.5s; }
+    @media only screen and (max-width: 62.5em) {
+      .menu__line {
+        width: 100%;
+        height: 0.3rem;
+        background-color: #d50000; } }
+
+@media only screen and (max-width: 62.5em) {
+  .change .menu__line--1 {
+    transform: rotate(40deg) translate(0.5rem, 1rem); } }
+
+@media only screen and (max-width: 62.5em) {
+  .change .menu__line--2 {
+    transform: translate(-0.2rem, 2rem); } }
+
+@media only screen and (max-width: 62.5em) {
+  .change .menu__line--3 {
+    transform: rotate(-40deg) translate(0.5rem, -1rem); } }

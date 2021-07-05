@@ -10,6 +10,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
+
+		@include respond(tablet) {
+			flex-direction: column;
+		}
 	}
 }
 
@@ -19,9 +23,25 @@
 	align-items: center;
 	justify-content: center;
 
+	@include respond(tablet) {
+		order: 1;
+	}
+
 	&__bag {
 		opacity: 0.9;
 		width: 45rem;
+
+		@include respond(x-large) {
+			width: 35rem;
+		}
+
+		@include respond(large) {
+			width: 30rem;
+		}
+
+		@include respond(laptop) {
+			width: 25rem;
+		}
 	}
 
 	&__button {
@@ -37,6 +57,12 @@
 		border: 0.1rem solid var(--color-white);
 		transition: background-color 0.2s;
 
+		@include respond(laptop) {
+			width: 15rem;
+			height: 4rem;
+			font-size: 1.7rem;
+		}
+
 		&:hover {
 			background-color: #d50000;
 		}
@@ -46,4 +72,16 @@
 .wine-bottle {
 	opacity: 0.6;
 	width: 80rem;
+
+	@include respond(x-large) {
+		width: 65rem;
+	}
+
+	@include respond(large) {
+		width: 60rem;
+	}
+
+	@include respond(laptop) {
+		width: 50rem;
+	}
 }
