@@ -33,7 +33,9 @@ section {
   transition: left 1.5s; }
   section-wrapper {
     width: inherit;
-    height: inherit; }
+    height: inherit;
+    transform: scale(1.5);
+    transition: all 2s; }
 
 .section-1 {
   z-index: 50; }
@@ -163,8 +165,7 @@ section {
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
-    transition: opacity 1.5s; }
+    justify-content: center; }
   .section-3-heading {
     font-size: 20rem;
     color: #ccc;
