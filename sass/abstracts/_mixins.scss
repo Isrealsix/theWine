@@ -4,6 +4,9 @@ $x-large: 100em; // 1600px
 $large: 81.25em; // 1300px
 $laptop: 75em; // 1200px
 $tablet: 62.5em; // 1000px
+$small: 50em; // 800px
+$x-small: 37.5em; //600px
+$smallest: 31.25em; //500px
 
 @mixin respond($breakpoint) {
 	@if ($breakpoint == x-large) {
@@ -26,6 +29,24 @@ $tablet: 62.5em; // 1000px
 
 	@if ($breakpoint == tablet) {
 		@media only screen and (max-width: $tablet) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == small) {
+		@media only screen and (max-width: $small) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == x-small) {
+		@media only screen and (max-width: $x-small) {
+			@content;
+		}
+	}
+
+	@if ($breakpoint == smallest) {
+		@media only screen and (max-width: $smallest) {
 			@content;
 		}
 	}

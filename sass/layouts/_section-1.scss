@@ -27,6 +27,13 @@
 			font-size: 8rem;
 		}
 
+		@include respond(small) {
+			font-size: 6rem;
+		}
+
+		@include respond(x-small) {
+			font-size: 4rem;
+		}
 		&-wrapper {
 			position: absolute;
 			top: 70%;

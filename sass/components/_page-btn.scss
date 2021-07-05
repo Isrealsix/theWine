@@ -9,6 +9,14 @@
 	&--left {
 		left: 4rem;
 
+		@include respond(small) {
+			left: 2rem;
+		}
+
+		@include respond(smallest) {
+			left: 0.5rem;
+		}
+
 		img {
 			transform: rotate(-90deg);
 		}
@@ -16,6 +24,14 @@
 
 	&--right {
 		right: 4rem;
+
+		@include respond(small) {
+			right: 2rem;
+		}
+
+		@include respond(smallest) {
+			right: 0.5rem;
+		}
 
 		img {
 			transform: rotate(90deg);

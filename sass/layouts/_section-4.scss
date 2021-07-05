@@ -33,6 +33,10 @@
 		@include respond(tablet) {
 			font-size: 8rem;
 		}
+
+		@include respond(x-small) {
+			font-size: 6rem;
+		}
 	}
 }
 
@@ -44,5 +48,13 @@
 
 	@include respond(tablet) {
 		width: 60rem;
+	}
+
+	@include respond(small) {
+		width: 45rem;
+	}
+
+	@include respond(x-small) {
+		width: 35rem;
 	}
 }

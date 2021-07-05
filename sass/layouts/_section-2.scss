@@ -42,6 +42,14 @@
 		@include respond(laptop) {
 			width: 25rem;
 		}
+
+		@include respond(small) {
+			width: 20rem;
+		}
+
+		@include respond(x-small) {
+			width: 15rem;
+		}
 	}
 
 	&__button {
@@ -61,6 +69,12 @@
 			width: 15rem;
 			height: 4rem;
 			font-size: 1.7rem;
+		}
+
+		@include respond(x-small) {
+			width: 12rem;
+			height: 3rem;
+			font-size: 1.4rem;
 		}
 
 		&:hover {
@@ -83,5 +97,13 @@
 
 	@include respond(laptop) {
 		width: 50rem;
+	}
+
+	@include respond(small) {
+		width: 40rem;
+	}
+
+	@include respond(x-small) {
+		width: 30rem;
 	}
 }

@@ -32,6 +32,10 @@
 			padding: 2rem;
 			border-radius: 0.5rem 0 0 0;
 		}
+
+		@include respond(smallest) {
+			top: 6.5rem;
+		}
 	}
 
 	&__link {
